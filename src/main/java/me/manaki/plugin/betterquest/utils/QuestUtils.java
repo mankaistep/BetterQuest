@@ -165,7 +165,7 @@ public class QuestUtils {
 			}
 		}
 
-		return prefix + quester.getCurrentObjectives(quest, false).get(0).replace("§a", "");
+		return ChatColor.stripColor(prefix + quester.getCurrentObjectives(quest, false).get(0).replace("§a", ""));
 	}
 
 	public static final String KEY = "qs-qc-%placeholder%";
