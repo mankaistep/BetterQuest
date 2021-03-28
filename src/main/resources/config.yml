@@ -1,0 +1,61 @@
+size: 9
+quest-help:
+- 'Nhiệm vụ 1;1;Đây là hướng dẫn quest, cái địt con mẹ mày'
+custom-gui:
+  main:
+    title: '&2&lNHIỆM VỤ CHÍNH TUYẾN'
+    slot: 5
+    icon: EMERALD
+    name: '&6&lNhiệm vụ chính tuyến'
+    desc: Nhiệm vụ theo cốt truyện với phần thưởng xứng đáng
+    command: [nhiemvuchinhtuyen, nvct]
+    quests:
+    - 'Chào mừng tân thủ'
+  side:
+    title: '&2&lNHIỆM VỤ PHỤ'
+    slot: 5
+    icon: DIAMOND
+    name: '&6&lNhiệm vụ phụ'
+    desc: Nhiệm vụ phụ không liên quan đến mạch truyện của game
+    commands: [nhiemvuchinhtuyen, nvct]
+    quests:
+    - 'Chào mừng tân thủ'
+
+special-gui:
+  dailyquests:
+    title: '&2&lNHIỆM VỤ HẰNG NGÀY'
+    slot: 4
+    icon: WORKBENCH
+    name: '&6&lNhiệm vụ hằng ngày'
+    desc: Nhiệm vụ hằng ngày để cày cuốc exp và cấp độ
+    commands: [nhiemvuhangngay, dailyquest, nvhn, dq]
+  currentquests:
+    title: '&2&lNHIỆM VỤ ĐANG LÀM'
+    slot: 1
+    icon: WORKBENCH
+    name: '&6&lNhiệm vụ đang làm'
+    desc: Nhiệm vụ hằng ngày để cày cuốc exp và cấp độ
+    commands: [nhiemvudanglam, currentquest, cq]
+
+dailyquest:
+  category:
+    cat1:
+      quests:
+      - quest1
+      min-quests: 2
+      max-quests: 10
+      requirement:
+        min-level: 10
+        max-level: 20
+        quest-point: 0
+        quest-done: ['NV 1', 'NV2']
+        playerdata: ['shit', 'shit2']
+
+# Main quest
+main-quests: []
+
+# FeatherBoard
+# %mainquest_name%, %mainquest_stage%, %mainquest_objective_1%, %mainquest_objective_2%
+featherboard:
+  enable: true
+  board: quest

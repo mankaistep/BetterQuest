@@ -1,0 +1,12 @@
+name: BetterQuest
+version: 1.0
+main: me.manaki.plugin.betterquest.BetterQuest
+depend: [Quests, PlaceholderAPI]
+softdepend: [FeatherBoard]
+commands:
+    proquests:
+        description: Plugin's commands
+        aliases: [pq, eq]
+    bangnhiemvu:
+        description: Plugin's commands
+        aliases: [pq, eq]
